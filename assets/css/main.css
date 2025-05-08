@@ -9,7 +9,7 @@
 
 
 
-.image.filtered img {
+.image img {
   max-width: 90vw;
   max-height: 90vh;
   object-fit: contain;
