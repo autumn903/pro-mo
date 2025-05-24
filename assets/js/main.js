@@ -759,27 +759,3 @@
 					});
 
 })(jQuery);
-
-
-const nextBtn = document.getElementById('next');
-const prevBtn = document.getElementById('prev');
-
-if (slider && nextBtn && prevBtn) {
-  let currentSlide = 0;
-
-  nextBtn.addEventListener('click', () => {
-    if (currentSlide < slider.children.length - 1) {
-      currentSlide++;
-      slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
-    }
-  });
-
-  prevBtn.addEventListener('click', () => {
-    if (currentSlide > 0) {
-      currentSlide--;
-      slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
-    }
-  });
-}
-
-
