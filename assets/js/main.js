@@ -4,27 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* chat gpt */
-const slider = document.getElementById('slider');
-const nextBtn = document.getElementById('next');
-const prevBtn = document.getElementById('prev');
 
-let currentSlide = 0;
-
-nextBtn.addEventListener('click', () => {
-  if (currentSlide < 2) {
-    currentSlide++;
-    slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
-  }
-});
-
-prevBtn.addEventListener('click', () => {
-  if (currentSlide > 0) {
-    currentSlide--;
-    slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
-  }
-});
-/* chat gpt */
 
 (function($) {
 
