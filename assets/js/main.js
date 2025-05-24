@@ -24,7 +24,7 @@ prevBtn.addEventListener('click', () => {
     slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
   }
 });
-/* chat gpt */
+                    /* chat gpt */
 
 (function($) {
 
