@@ -759,10 +759,8 @@
 					});
 
 })(jQuery);
-/*
-chat gpt 
-*/
-const slider = document.getElementById('slider');
+
+
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
 
