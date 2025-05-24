@@ -4,32 +4,27 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* 原本的底部按鈕不要用了，改用新的側邊按鈕 */
-.side-controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  pointer-events: none; /* 讓整個容器不影響點擊，只讓按鈕響應點擊 */
-}
+/* chat gpt */
+const slider = document.getElementById('slider');
+const nextBtn = document.getElementById('next');
+const prevBtn = document.getElementById('prev');
 
-.side-btn {
-  background-color: transparent;
-  color: #007bff;
-  border: none;
-  padding: 20px;
-  font-size: 24px;
-  cursor: pointer;
-  pointer-events: auto; /* 讓按鈕可以點 */
-  transition: color 0.3s ease;
-}
+let currentSlide = 0;
 
-.side-btn:hover {
-  color: #0056b3;
-}
+nextBtn.addEventListener('click', () => {
+  if (currentSlide < 2) {
+    currentSlide++;
+    slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
+  }
+});
 
+prevBtn.addEventListener('click', () => {
+  if (currentSlide > 0) {
+    currentSlide--;
+    slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
+  }
+});
+/* chat gpt */
 
 (function($) {
 
